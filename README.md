@@ -17,4 +17,13 @@ TODO
 Extend solution to group participants into group of 2 people (3 possible by exception) based on the following rules:
 * Participants should know the same programming language
 * No two seniors (skill = 3) or two juniors (skill = 1) in a pair
-* Assign participants to room (numeric) and expose in appropriate format
+
+# Excercise 3
+TODO
+Extend the solution to expose the logic via REST. Providing list of participants like in above exercises will return list of pairs
+
+# Excercise 4
+TODO
+Build a new service which uses a centrally hosted service (or the one created in 1+2+3).  
+Assign the pairs to rooms (numeric) and send the result to the centrally hosted service.  
+SwaggerUI will be provided.
