@@ -2,7 +2,7 @@
 Goal is to develop testdriven a small application where we can shuffle developers in pairs based on their language skills and assign to rooms.  
 To run it as container, simply execute  
 ```docker run -p 8080:8080 odin568/tdd-training:latest -d```   
-Then a ![SwaggerUI](http://localhost:8080/swagger-ui.html) should be available.
+Then SwaggerUI should be available here: ```http://localhost:8080/swagger-ui.html```
 
 ## CI Status
 ![example workflow](https://github.com/odin568/TDD_TRAINING/actions/workflows/gradle.yml/badge.svg)  
