@@ -1,7 +1,8 @@
 # TDD_Training
 Goal is to develop testdriven a small application where we can shuffle developers in pairs based on their language skills and assign to rooms.  
 To run it as container, simply execute  
-```docker run -p 8080:8080 odin568/tdd-training:latest -d```
+```docker run -p 8080:8080 odin568/tdd-training:latest -d```   
+Then a ![SwaggerUI](http://localhost:8080/swagger-ui.html) should be available.
 
 ## CI Status
 ![example workflow](https://github.com/odin568/TDD_TRAINING/actions/workflows/gradle.yml/badge.svg)  
@@ -21,7 +22,7 @@ Extend solution to group participants into group of 2 people (3 possible by exce
 * No two seniors (skill = 3) or two juniors (skill = 1) in a pair
 
 ## Excercise 3
-TODO  
+![Commit](https://github.com/odin568/TDD_Training/commit/7561785fe12c7bfe814cf5de9d60a91c7da29190)  
 Extend the solution to expose the logic via REST. Providing list of participants like in above exercises will return list of pairs
 
 ## Excercise 4
