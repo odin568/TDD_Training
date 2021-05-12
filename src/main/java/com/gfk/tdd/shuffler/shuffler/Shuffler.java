@@ -30,7 +30,7 @@ public class Shuffler {
 
             var languages = participant.getSkills().stream().map(LanguageSkill::getLanguage).collect(Collectors.toList());
 
-            boolean joinedPair = false;
+            Participant joinedPartner = null;
 
             // Find Pair to join
             for(var pair : pairs) {
@@ -44,7 +44,7 @@ public class Shuffler {
 
                         if (joinedSkill > 2 && joinedSkill < 6) {
                             pair.getParticipants().add(participant);
-                            joinedPair = true;
+                            joinedPartner = otherParticipant;
                             break;
                         }
                     }
@@ -52,11 +52,12 @@ public class Shuffler {
             }
 
             // If participant joined a pair, remove him from all naively created pairs
-            if (joinedPair)
+            if (joinedPartner != null)
             {
                 List<Pair> pairsToRemove = new ArrayList<>();
                 for (var pair : pairs) {
-                    if (pair.getParticipants().size() == 1 && pair.getParticipants().get(0) == participant) {
+                    if (pair.getParticipants().size() == 1 &&
+                            (pair.getParticipants().get(0) == participant || pair.getParticipants().get(0).equals(joinedPartner))) {
                         pairsToRemove.add(pair);
                     }
                 }

@@ -114,4 +114,20 @@ class ShufflerTest {
         Assertions.assertEquals(2, pairs.size());
         Assertions.assertEquals(3, countDistinctParticipants(pairs));
     }
+
+    @Test
+    public void shuffleParticipants_twoSiblingLanguages_properPair() {
+
+        String csv = """
+                   Dwayne Johnson,Java,1,.NET,3
+                   Arnold Schwarzenegger,Java,3,.NET,1
+                """;
+
+        Shuffler shuffler = new Shuffler();
+
+        var pairs = shuffler.ShuffleParticipants(prepareFromCsv(csv));
+
+        Assertions.assertEquals(1, pairs.size());
+        Assertions.assertEquals(2, countDistinctParticipants(pairs));
+    }
 }
