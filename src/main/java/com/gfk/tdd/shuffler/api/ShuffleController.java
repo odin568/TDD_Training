@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Controller {
+public class ShuffleController {
 
     private CsvImporter importer;
     private Shuffler shuffler;
 
     @Autowired
-    public Controller(CsvImporter importer, Shuffler shuffler) {
+    public ShuffleController(CsvImporter importer, Shuffler shuffler) {
         this.importer = importer;
         this.shuffler = shuffler;
     }

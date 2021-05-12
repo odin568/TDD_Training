@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 
 import static org.mockito.Mockito.*;
 
-class ControllerTest {
+class ShuffleControllerTest {
 
     @Test
     void shuffle() {
@@ -18,7 +18,7 @@ class ControllerTest {
         Shuffler shuffler = mock(Shuffler.class);
 
 
-        Controller ctr = new Controller(importer, shuffler);
+        ShuffleController ctr = new ShuffleController(importer, shuffler);
 
         ResponseEntity<Object> result = ctr.shuffle("");
 
