@@ -1,5 +1,7 @@
 # TDD_Training
 Goal is to develop testdriven a small application where we can shuffle developers in pairs based on their language skills and assign to rooms.  
+To run it as container, simply execute  
+```docker run -p 8080:8080 odin568/tdd-training:latest -d```
 
 ## CI Status
 ![example workflow](https://github.com/odin568/TDD_TRAINING/actions/workflows/gradle.yml/badge.svg)  
