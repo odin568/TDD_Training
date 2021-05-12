@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-class ShuffleTest {
+class ShufflerTest {
 
     private List<Participant> prepareFromCsv(String csv) {
         CsvImporter importer = new CsvImporter(new LineExtractor());
@@ -38,7 +38,7 @@ class ShuffleTest {
              Arnold Schwarzenegger,Java,2
              """;
 
-        Shuffle shuffler = new Shuffle();
+        Shuffler shuffler = new Shuffler();
 
         var pairs = shuffler.ShuffleParticipants(prepareFromCsv(csv));
 
@@ -55,7 +55,7 @@ class ShuffleTest {
              Bruce Willis,.NET,3
              """;
 
-        Shuffle shuffler = new Shuffle();
+        Shuffler shuffler = new Shuffler();
 
         var pairs = shuffler.ShuffleParticipants(prepareFromCsv(csv));
 
@@ -72,7 +72,7 @@ class ShuffleTest {
              Bruce Willis,.NET,3
              """;
 
-        Shuffle shuffler = new Shuffle();
+        Shuffler shuffler = new Shuffler();
 
         var pairs = shuffler.ShuffleParticipants(prepareFromCsv(csv));
 
@@ -90,7 +90,7 @@ class ShuffleTest {
              Bruce Willis,.NET,3
              """;
 
-        Shuffle shuffler = new Shuffle();
+        Shuffler shuffler = new Shuffler();
 
         var pairs = shuffler.ShuffleParticipants(prepareFromCsv(csv));
 
@@ -107,7 +107,7 @@ class ShuffleTest {
              Bruce Willis,.NET,3,Python,1
              """;
 
-        Shuffle shuffler = new Shuffle();
+        Shuffler shuffler = new Shuffler();
 
         var pairs = shuffler.ShuffleParticipants(prepareFromCsv(csv));
 

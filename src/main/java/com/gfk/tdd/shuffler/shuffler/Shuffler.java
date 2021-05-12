@@ -3,11 +3,13 @@ package com.gfk.tdd.shuffler.shuffler;
 import com.gfk.tdd.shuffler.entities.LanguageSkill;
 import com.gfk.tdd.shuffler.entities.Pair;
 import com.gfk.tdd.shuffler.entities.Participant;
+import org.springframework.stereotype.Service;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Shuffle {
+@Service
+public class Shuffler {
 
     public List<Pair> ShuffleParticipants(List<Participant> participantList) {
 
