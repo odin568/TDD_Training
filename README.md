@@ -15,7 +15,7 @@ The CSV contains the following information
 * Experience (numeric) for multiple Programming languages (string)
 
 ## Exercise 2
-![Commit](https://github.com/odin568/TDD_Training/commit/4aea27ebea429ea2462cc29545f5b3af13ebffd3)
+![Commit](https://github.com/odin568/TDD_Training/commit/4aea27ebea429ea2462cc29545f5b3af13ebffd3)  
 Extend solution to group participants into group of 2 people (3 possible by exception) based on the following rules:
 * Participants should know the same programming language
 * No two seniors (skill = 3) or two juniors (skill = 1) in a pair
